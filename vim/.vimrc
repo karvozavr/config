@@ -82,3 +82,9 @@ set visualbell t_vb=
 
 set guifont=Monaco:h18
 colorscheme OceanicNext
+
+" Search in subfolders
+set path+=**
+
+" Display all matching files on tab-completion
+set wildmenu
