@@ -5,6 +5,6 @@ set fish_greeting
 fish_vi_key_bindings
 
 # load my fish functions
-for f in (find ~/.config/fish/f213/ -type f  -name '*.fish')
+for f in (find ~/.config/fish/custom_functions/ -type f  -name '*.fish')
     source $f
 end
