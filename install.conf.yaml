@@ -8,7 +8,7 @@
     ~/.dotfiles: ''
     ~/.vimrc: vim/.vimrc
     ~/.config/fish/config.fish: fish/config.fish
-    ~/.config/fish/dmitriiabramov: fish/dmitriiabramov
+    ~/.config/fish/custom_functions: fish/custom_functions
     ~/.config/omf: fish/omf
 
 - shell:
