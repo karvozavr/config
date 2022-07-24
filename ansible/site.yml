@@ -1,0 +1,7 @@
+---
+  - name: My machine
+    hosts: localhost 
+    roles:
+      - common
+      - dev
+
