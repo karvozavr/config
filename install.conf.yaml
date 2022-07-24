@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.vimrc: vim/.vimrc
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/dmitriiabramov: fish/dmitriiabramov
+    ~/.config/omf: fish/omf
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - command: ./run-ansible.sh
+    stdin: true
+    stdout: true
+    description: Pouring software
+  - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > /tmp/omf-install && chmod +x /tmp/omf-install
+  - fish /tmp/omf-install --noninteractive && rm /tmp/omf-install
