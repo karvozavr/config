@@ -13,6 +13,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [./install-brew.sh, Installing homebrew and essential utils]
   - command: ./run-ansible.sh
     stdin: true
     stdout: true
