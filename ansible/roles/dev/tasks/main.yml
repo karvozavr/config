@@ -9,6 +9,7 @@
         - bat
         - exa
         - fd
+        - fzf
         - nvim
         - ripgrep
 
