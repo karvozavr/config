@@ -17,3 +17,8 @@
     homebrew:
       name:
         - node
+
+  - name: Ensure Language Servers are installed
+    homebrew:
+      name:
+        - hashicorp/tap/terraform-ls
