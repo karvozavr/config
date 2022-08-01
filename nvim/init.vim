@@ -23,6 +23,9 @@ call plug#end()
 " === End of plugins
 
 
+" Enable mouse
+:set mouse=a
+
 " Netrw file explorer settings
 let g:netrw_banner = 0 " hide the banner above the files
 let g:netrw_liststyle = 3 " tree view
@@ -36,6 +39,10 @@ nnoremap ,fg <cmd>Telescope live_grep<cr>
 " Telescope fzf plugin
 lua << EOF
 require('telescope').setup {
+  defaults = {
+    path_display = {"smart"}
+  },
+
   extensions = {
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
