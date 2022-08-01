@@ -19,12 +19,30 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Lua scripts do not work without it
 Plug 'nvim-lua/plenary.nvim'
 
+" UI Theme
+Plug 'joshdick/onedark.vim'
+
+" Terraform syntax highlighting
+Plug 'hashivim/vim-terraform'
+
 call plug#end()
 " === End of plugins
 
 
 " Enable mouse
 :set mouse=a
+
+" CoC LanguageServer Completion
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+" Use Enter key in edit mode to apply completion option
+inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+
+" UI settings 
+colorscheme onedark
+" set cursorline " Underline the selected line
+set ruler 
+set number
 
 " Netrw file explorer settings
 let g:netrw_banner = 0 " hide the banner above the files
