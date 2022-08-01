@@ -13,3 +13,7 @@
         - nvim
         - ripgrep
 
+  - name: Ensure Node is installed
+    homebrew:
+      name:
+        - node
