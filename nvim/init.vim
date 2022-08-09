@@ -10,7 +10,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 " LanguageServer plugins support
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Global file & text search
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -34,9 +34,9 @@ call plug#end()
 
 " CoC LanguageServer Completion
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+" inoremap <silent><expr> <c-space> coc#refresh()
 " Use Enter key in edit mode to apply completion option
-inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+" inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 
 " UI settings 
 colorscheme onedark
