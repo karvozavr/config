@@ -1,7 +1,4 @@
 ---
-  - name: Ensure iterm2 is installed
-    homebrew_cask:
-      name: iterm2
 
   - name: Ensure console utils are installed
     homebrew:
