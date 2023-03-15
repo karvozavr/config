@@ -11,6 +11,7 @@
     ~/.config/fish/custom_functions: fish/custom_functions
     ~/.config/omf: fish/omf
     ~/.config/nvim: nvim
+    ~/.config/fish/completions: fish/completions
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

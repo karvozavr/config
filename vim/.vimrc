@@ -69,7 +69,9 @@ set termencoding=utf-8
 set wrap
 set linebreak
 
-"set nu "Line numbers
+" turn hybrid relative line numbers on
+set relativenumber
+set number
 
 set nobackup
 set noswapfile

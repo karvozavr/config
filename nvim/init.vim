@@ -42,7 +42,9 @@ call plug#end()
 colorscheme onedark
 " set cursorline " Underline the selected line
 set ruler 
-set number
+
+set number " Show current line number
+set relativenumber " Use relative line numbers
 
 " Netrw file explorer settings
 let g:netrw_banner = 0 " hide the banner above the files
